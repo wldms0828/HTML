@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jstime</title>
+</head>
+<body>
+	<h2 id = "nowtime">현재시간</h2>
+	<script>
+	setInterval(function() {
+		var now = new Date();
+		var nowtime = "현재 시간은" + now.getFullYear() + "년";
+		+ (now.getMonth()+1)+"월"+now.getDate()+"일" + now.getHours()+":"+now.getMinutes()+":"+now.getSeconds()+"입니다.";
+		document.getElementById("nowtime").innerHTML = nowtime;
+	},1000);
+		
+		
+	
+	</script>
+</body>
+</html>
